@@ -12,14 +12,14 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class CompraDetalleService {
+public class ComprasDetalleService {
 
     // --- Dependencias ---
     private final CsvReaderService csvReaderService;
     private final RestTemplate restTemplate;
 
     // --- Constructor ---
-    public CompraDetalleService(CsvReaderService csvReaderService) {
+    public ComprasDetalleService(CsvReaderService csvReaderService) {
         this.csvReaderService = csvReaderService;
         this.restTemplate = new RestTemplate();
     }

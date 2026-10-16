@@ -27,7 +27,7 @@ public class CompraUnidadService {
         String unidadFiltro = normalizarUnidadParaFiltro(unidadParam);
         String unidadRespuesta = normalizarUnidadParaRespuesta(unidadParam);
 
-        List<CompraCsv> todasLasCompras = csvReaderService.obtenerCompras();
+        List<CompraCsv> todasLasCompras = csvReaderService.leerCompras();
         List<ItemCompra> comprasConvertidas = new ArrayList<>();
         long totalPesos = 0;
 
